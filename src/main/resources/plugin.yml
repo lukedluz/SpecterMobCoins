@@ -1,0 +1,8 @@
+main: com.lucas.spectermobcoins.Main
+name: SpecterMobCoins
+version: 1.0
+author: [Specter]
+softdepend: [MVdWPlaceholderAPI, AtlasLicense]
+commands:
+  mobcoins:
+  lojamobcoins:

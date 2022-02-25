@@ -1,0 +1,50 @@
+#PlaceHolders
+#{specter_mobcoins} - Mostra os mobcoins do player
+#{specter_mobcoins_formatted} - Mostra os mobcoins do player formatado
+
+#Permissões
+#specter.mobcoins - Comandos para setar mobcoins
+
+#Replaces
+#%Preco - Preço do item
+#%MobCoins - MobCoins do player
+#%MobCoinsF - DungeonCoins do player formatado
+#%p - Player
+
+#Configurações gerais
+#Obs: os slots devem ser multiplos de 9
+Menu:
+  Slots: '27'
+  Nome: '&6Shop'
+
+MobCoinsFormatado: true
+  
+#Configure os itens de troca
+#Obs: o slot 5 está ocupado por um item padrão
+#Obs2: Use $ para a cor no nome
+Itens:
+  $6Item de exemplo:
+    Comercializavel: true
+    Preco: '100'
+    ItemId: '1'
+    ItemData: '2'
+    ItemSlot: '11'
+    ItemLore:
+      - '&6Um item de exemplo comercializavel'
+      - '&6Configure-o na config.yml'
+      - '&6Preço exemplo: %Preco'
+    Comandos:
+      - 'give %p Stone 1'
+      
+  $6Item de exemplo2:
+    Comercializavel: false
+    Preco: '0'
+    ItemId: '1'
+    ItemData: '2'
+    ItemSlot: '12'
+    ItemLore:
+      - '&6Um item de exemplo não comercializavel'
+      - '&6Configure-o na config.yml'
+      - '&6Seu MobCoins: %MobCoinsF'
+    Comandos:
+      - ''
